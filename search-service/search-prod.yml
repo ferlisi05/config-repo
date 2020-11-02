@@ -1,0 +1,8 @@
+search:
+ result:
+  perpage: 200
+ canexport: true
+ render: false
+duration: all
+service:
+    greeting: Hello from Search Prod 

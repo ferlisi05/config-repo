@@ -1,0 +1,10 @@
+report:
+  export:
+    type: pdf
+  border: 2
+  page:
+    color: yellow
+    size: A4
+duration: all
+service:
+    greeting: Hello from Reporting Dev
