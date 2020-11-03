@@ -1,0 +1,6 @@
+server:
+    port: 9091
+
+service:
+    greeting: Hello from Profile 
+
