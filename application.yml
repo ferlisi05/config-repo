@@ -13,3 +13,29 @@ service:
 #       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     
     
+server:
+  port: 8192
+
+#http://localhost:8192/h2-console
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+    h2:
+        console:
+            enabled: true
+    datasource:
+        platform: h2
+        url: jdbc:h2:mem:listofstudent
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+jpa:
+    hibernate:
+        naming:
+            physical-startegy:org.hibernate.boot.model.naming.PhysicalNamingStartegyStandardImpl
+
