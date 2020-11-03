@@ -1,5 +1,5 @@
 service:
-    b: Hello from Membership !
+    greeting: Hello from Membership 
 
 
 member:
