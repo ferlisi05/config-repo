@@ -1,0 +1,40 @@
+service: 
+    greeting: Hello from PROFILE DEFAULT 
+    
+    
+server:
+  port: 9091
+
+hibernate:
+    globally_quoted_identifiers: true
+    show_sql: true
+
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: none
+            naming: 
+                physical-startegy: org.hibernate.boot.model.naming.PhysicalNamingStartegyStandardImpl
+        properties:
+          hibernate:
+            show_sql: true
+            format_sql: true
+    datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@host.docker.internal:1521:xe
+        username: salva
+        password: salva
+   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
