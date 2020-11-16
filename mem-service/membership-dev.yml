@@ -10,6 +10,6 @@ vehicle:
 duration: summer
 db:
  user: salva
- password: salva
+ password: '{cipher}8bd072cb3c99ac9293bf851e46c7cef1ada861d6daace81928ec09d379615a18'
 service:
     greeting: Hello from Membership Dev
